@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Stefania Wurlianty | Portofolio Beasiswa & Karir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #fdf8ed; /* cream lembut */
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.5;
+            padding: 2rem 1.5rem;
+        }
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #fffcf5;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        .header-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem 2.5rem;
+            border-bottom: 2px solid #f3ebd8;
+            align-items: center;
+        }
+        .photo-upload {
+            flex-shrink: 0;
+            text-align: center;
+        }
+        .photo-preview {
+            width: 150px;
+            height: 150px;
+            background-color: #f4ecd9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid #e2d5bb;
+            margin-bottom: 0.75rem;
+        }
+        .photo-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .upload-btn {
+            background-color: #f5efdf;
+            border: 1px solid #ddd0b6;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #4a3e28;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .upload-btn:hover {
+            background-color: #e9dfc9;
+        }
+        .personal-info h1 {
+            font-size: 2.1rem;
+            color: #2c2416;
+            margin-bottom: 0.5rem;
+        }
+        .info-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .info-item {
+            display: flex;
+            gap: 0.6rem;
+            font-size: 0.95rem;
+        }
+        .label {
+            font-weight: 600;
+            min-width: 70px;
+            color: #5f523b;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            padding: 2rem 2.5rem;
+        }
+        .left-col { flex: 1.5; min-width: 220px; }
+        .right-col { flex: 2; min-width: 260px; }
+        .section-card {
+            background: #fffaf2;
+            border-radius: 24px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid #f2e9da;
+        }
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            border-left: 5px solid #d6c29d;
+            padding-left: 0.9rem;
+            margin-bottom: 1.2rem;
+            color: #2c2416;
+        }
+        .gpa-badge {
+            background-color: #f0e8da;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.4rem;
+            display: inline-block;
+        }
+        .achievement-list, .skill-list {
+            list-style: none;
+        }
+        .achievement-list li, .skill-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        footer {
+            background-color: #faf3e6;
+            padding: 1rem 2.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #8f7f63;
+            border-top: 1px solid #efe3d0;
+        }
+        input#fileUpload { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="header-profile">
+        <div class="photo-upload">
+            <div class="photo-preview" id="photoPreview">
+                <div id="photoPlaceholder" style="font-size: 3rem; color: #b7a77d;">👤</div>
+            </div>
+            <label for="fileUpload" class="upload-btn">Unggah Foto</label>
+            <input type="file" id="fileUpload" accept="image/*">
+        </div>
+        <div class="personal-info">
+            <h1>Stefania Wurlianty</h1> [cite: 264]
+            <div class="info-detail">
+                <div class="info-item">
+                    <span class="label">Telepon</span>
+                    <span class="value">082146415556</span> [cite: 268]
+                </div>
+                <div class="info-item">
+                    <span class="label">Email</span>
+                    <span class="value">faniwurliantymeturan@gmail.com</span> [cite: 272]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-col">
+            <div class="section-card">
+                <div class="section-title">Pendidikan</div>
+                <div class="education-detail">
+                    <p><strong>Program Studi:</strong> Ilmu Komputer</p> [cite: 286]
+                    <p><strong>Universitas:</strong> Universitas Pattimura</p> [cite: 287]
+                    <p><strong>Semester:</strong> Semester 3</p> [cite: 288]
+                    <div class="gpa-badge">IPK saat ini: 3.45</div> [cite: 289]
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-title">Kemampuan</div>
+                <ul class="skill-list">
+                    <li><strong>Soft Skill:</strong> Komunikasi efektif, kerjasama tim, adaptasi, dan presentasi.</li> [cite: 296, 298]
+                    <li><strong>Skill Teknis:</strong> Microsoft Office, pemrograman dasar, sistem informasi.</li> [cite: 302, 303]
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="section-card">
+                <div class="section-title">Prestasi & Penghargaan</div>
+                <ul class="achievement-list">
+                    <li>
+                        <strong>Juara Harapan 3 Peneliti Belia 2022 (Provinsi)</strong><br>
+                        Berhasil meraih juara harapan 3 dan mengikuti kegiatan Peneliti Belia di Surabaya. [cite: 317, 318]
+                    </li>
+                    <li>
+                        <strong>Penghargaan Baca Puisi Kegiatan Badar</strong><br>
+                        Apresiasi khusus atas penampilan membaca puisi tingkat Klasis. [cite: 320, 322]
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2025 Stefania Wurlianty - Keperluan Beasiswa & Lamaran Kerja</span> [cite: 332]
+    </footer>
+</div>
+
+<script>
+    const fileInput = document.getElementById('fileUpload');
+    const photoPreview = document.getElementById('photoPreview');
+    const placeholder = document.getElementById('photoPlaceholder');
+
+    fileInput.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                photoPreview.innerHTML = `<img src="${event.target.result}" alt="Foto Profil">`;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>
